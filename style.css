@@ -136,8 +136,8 @@ h2 {
 
 .items {
     display: flex;
-    justify-content: center;
-    max-width: unset;
+    /* justify-content: center; */
+    /* max-width: unset; */
 }
 
 .item {
@@ -148,9 +148,114 @@ h2 {
     margin-left: 20px;
 }
 
+.map,
+.palm {
+    margin-left: 0;
+}
+
 .item_text {
     padding: 20px 15px;
     text-align: center;
+}
+
+}
+
+@media screen and (min-width: 1100px) {
+
+.header_info,
+.intro {
+    max-width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    display: flex;
+    justify-content: left;
+    max-width: 1040px;
+}
+
+.header_info {
+    order: 1;
+    margin-top: 70px;
+    flex: 1 1 50%;
+    margin-right: 90px;
+}
+
+.header_img {
+    order: 2;
+    flex: 1 1 50%;
+}
+
+h1,
+.header_info p {
+    text-align: left;
+}
+
+hr {
+    margin-left: 0;
+}
+
+.services {
+    display: flex;
+}
+
+.agency .intro {
+    order: 2;
+}
+
+.agency .items {
+    order: 1;
+}
+
+h2,
+.intro p {
+    text-align: left;
+}
+
+body {
+    padding: 60px 80px;
+}
+
+.item {
+    margin: 0;
+    margin-right: 20px;
+    margin-bottom: 80px;
+    height: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+section {
+    max-width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.option {
+    margin: 0;
+    margin-right: 20px;
+}
+
+.agency .intro {
+    margin-left: 60px;
+}
+
+.delegate .intro {
+    margin-right: 60px;
+}
+
+.plane,
+.caravan {
+    margin-right: 0;
+}
+
+.items {
+    flex: 1 0 53%;
+}
+
+h2 {
+    margin-top: 30px;
 }
 
 }
